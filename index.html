@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img class="logo" src="logo.png" alt=""></div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#menu">MENU</a></li>
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Welcome to</h3>
+            <h1><span>Webakery</span></h1>
+            <h3>Information <span>Technology</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <a class="btn" href="">ORDER NOW!</a>
+        </div>
+    </section>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: arial;
+    color: white;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content p {
+    color: gray;
+    font-size: 2rem;
+}
+
+.navbar li a:hover {
+    color: black;
+    transition: .3s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hotpink;
+    padding: 10px 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 50px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #333;
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.logo {
+    height: 35px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 8rem 9% 2rem;
+}
+
+span {
+    color: hotpink;
+}
+
+.home {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    line-height: 1.3;
+    font-weight: 900;
+}
+
+.home-content h3 {
+    font-size: 3.7rem;
+    font-weight: 700;
+    color: gray;
+}
+
+.btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 1px solid hotpink;
+    color: white;
+    background: hotpink;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    color: hotpink;
+    background: transparent;
+    box-shadow: 1px 1px 100px 1px hotpink;
+    transition: .3s ease;
+}
